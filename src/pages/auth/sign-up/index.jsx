@@ -1,9 +1,9 @@
-import style from "./style.module.css";
+import styles from "./styles.module.css";
 
 export const SignUp = () => {
   return (
     <div>
-      <p className={style.text}>test text</p>
+      <p className={styles.text}>test text</p>
     </div>
   );
 };

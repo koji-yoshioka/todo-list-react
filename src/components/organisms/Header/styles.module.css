@@ -1,0 +1,10 @@
+.module {
+  background-color: var(--primary-color);
+  display: flex;
+  height: var(--header-height);
+  justify-content: space-between;
+  padding: 10px 5px;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
