@@ -1,5 +1,9 @@
 :root {
-  --primary-color: #00aa8a;
-  --header-height: 40px;
+  --primary-color: #61dafb;
+  --header-height: 50px;
   --footer-height: 60px;
+}
+
+a {
+  text-decoration: none;
 }

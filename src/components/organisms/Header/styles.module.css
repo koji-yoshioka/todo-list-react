@@ -1,5 +1,5 @@
 .module {
-  background-color: var(--primary-color);
+  background-color: #1c1c1c;
   display: flex;
   height: var(--header-height);
   justify-content: space-between;
@@ -7,4 +7,20 @@
   position: sticky;
   top: 0;
   width: 100%;
+}
+
+.logoArea {
+  align-items: center;
+  display: inline-flex;
+  column-gap: 5px;
+}
+
+.logoArea__logo {
+  height: 30px;
+  width: 30px;
+}
+
+.logoArea__title {
+  color: var(--primary-color);
+  font-size: 18px;
 }
