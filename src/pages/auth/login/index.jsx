@@ -1,12 +1,10 @@
-import styles from "./styles.module.css";
+import { Login } from "../../../components/templates/auth/login";
 import { BasicLayout } from "../../../components/layouts/BasicLayout";
 
-export const Login = () => {
+export default (props) => {
   return (
     <BasicLayout>
-      <div>
-        <p className={styles.text}>test text</p>
-      </div>
+      <Login {...props} />
     </BasicLayout>
   );
 };

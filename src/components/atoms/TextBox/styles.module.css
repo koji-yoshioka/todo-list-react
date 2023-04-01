@@ -1,0 +1,48 @@
+.inputField {
+  position: relative;
+}
+
+.inputField > input::placeholder {
+  color: transparent;
+}
+
+.inputField > input:focus {
+  border-color: #005fcc;
+}
+
+.inputField > input + span {
+  background-color: transparent;
+  left: 12px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: top left;
+  -webkit-transform: translateY(-50%);
+  transition-duration: 0.3s;
+}
+
+.inputField > input:focus + span {
+  background-color: #fff;
+  top: -6px;
+  transform: scale(0.8);
+}
+
+.inputField > input + span::after {
+  color: #808080;
+  content: attr(data-placeholder);
+}
+
+.inputField > input:focus + span::after {
+  color: #005fcc;
+}
+
+.module {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  display: block;
+  padding: 12px;
+  width: 100%;
+}

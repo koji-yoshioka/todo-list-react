@@ -1,10 +1,12 @@
 import { Header } from "../../organisms/Header";
+import { Footer } from "../../organisms/Footer";
 
-export const BasicLayout = ({ props, children }) => {
+export const BasicLayout = (props) => {
   return (
     <>
       <Header />
-      {children}
+      {props.children}
+      <Footer />
     </>
   );
 };

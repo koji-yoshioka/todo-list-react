@@ -2,6 +2,7 @@
   --primary-color: #61dafb;
   --header-height: 50px;
   --footer-height: 60px;
+  --pc-min-width: 1025px;
 }
 
 a {
