@@ -1,16 +1,29 @@
-.inputField {
+.module {
   position: relative;
 }
 
-.inputField > input::placeholder {
+.element {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  display: block;
+  outline: none;
+  padding: 12px;
+  width: 100%;
+}
+
+.element:placeholder-shown::placeholder {
   color: transparent;
 }
 
-.inputField > input:focus {
-  border-color: #005fcc;
+.element:active,
+.element:focus,
+.element:hover {
+  border-color: var(--primary-color);
 }
 
-.inputField > input + span {
+.element + span {
   background-color: transparent;
   left: 12px;
   pointer-events: none;
@@ -22,27 +35,19 @@
   transition-duration: 0.3s;
 }
 
-.inputField > input:focus + span {
+.element:focus + span,
+.element:not(:placeholder-shown) + span {
   background-color: #fff;
   top: -6px;
   transform: scale(0.8);
 }
 
-.inputField > input + span::after {
+.element + span::before {
   color: #808080;
   content: attr(data-placeholder);
 }
 
-.inputField > input:focus + span::after {
-  color: #005fcc;
-}
-
-.module {
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: #555;
-  display: block;
-  padding: 12px;
-  width: 100%;
+.element:active,
+.element:focus + span::before {
+  color: var(--primary-color);
 }

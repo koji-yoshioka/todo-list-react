@@ -1,5 +1,6 @@
 import styles from "./styles.module.css";
 import { TextBox } from "../../../atoms/TextBox";
+import { CheckBox } from "../../../atoms/CheckBox";
 import { Main } from "../../../organisms/Main";
 
 export const SignUp = (props) => {
@@ -13,6 +14,9 @@ export const SignUp = (props) => {
           </li>
           <li className={styles.item}>
             <TextBox type="password" placeholder="パスワード" />
+          </li>
+          <li className={styles.item}>
+            <CheckBox />
           </li>
         </ul>
       </form>

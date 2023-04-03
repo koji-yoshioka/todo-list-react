@@ -1,0 +1,36 @@
+.module {
+  display: inline-block;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.element {
+  border: 1px solid #999;
+  border-radius: 4px;
+  cursor: pointer;
+  height: 100%;
+  outline: none;
+  position: absolute;
+  width: 100%;
+}
+
+.element:active,
+.element:hover,
+.element:focus {
+  border-color: var(--primary-color);
+}
+
+.element:checked + span::before {
+  border-right: 3px solid var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  content: "";
+  cursor: pointer;
+  display: block;
+  height: 16px;
+  inset: 6px 12px;
+  pointer-events: none;
+  position: absolute;
+  rotate: 45deg;
+  width: 8px;
+}
