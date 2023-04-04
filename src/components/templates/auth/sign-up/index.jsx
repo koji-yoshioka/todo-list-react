@@ -1,9 +1,9 @@
-import styles from "./styles.module.css";
+import { React, useId } from "react";
+import { Button } from "@/components/atoms/Button";
+import { CheckBox } from "@/components/atoms/CheckBox";
 import { TextBox } from "@/components/atoms/TextBox";
-import { CheckBox } from "../../../atoms/CheckBox";
-import { Button } from "../../../atoms/Button";
-import { Main } from "../../../organisms/Main";
-import { useId } from "react";
+import { Main } from "@/components/organisms/Main";
+import styles from "./styles.module.css";
 
 export const SignUp = (props) => {
   const autoLoginId = useId();

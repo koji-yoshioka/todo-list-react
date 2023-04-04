@@ -1,7 +1,7 @@
 import React from "react";
-import { createBrowserRouter, Link } from "react-router-dom";
-import SignUp from "./pages/auth/sign-up";
+import { Link, createBrowserRouter } from "react-router-dom";
 import Login from "./pages/auth/login";
+import SignUp from "./pages/auth/sign-up";
 
 export const router = createBrowserRouter([
   {

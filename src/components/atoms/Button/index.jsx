@@ -1,6 +1,6 @@
+import { React, forwardRef } from "react";
 import clsx from "clsx";
 import styles from "./styles.module.css";
-import { forwardRef } from "react";
 
 export const Button = forwardRef(function Button(props, ref) {
   const { theme = "primary", ...restProps } = props;

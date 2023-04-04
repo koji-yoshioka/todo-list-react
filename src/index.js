@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./lib/styles/reset.css";
-import "./lib/styles/base.css";
 import App from "./App";
+import "./lib/styles/base.css";
+import "./lib/styles/reset.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

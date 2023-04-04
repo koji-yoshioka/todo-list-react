@@ -1,5 +1,6 @@
+import { React } from "react";
+import { Main } from "@/components/organisms/Main";
 import styles from "./styles.module.css";
-import { Main } from "../../../organisms/Main";
 
 export const Login = (props) => {
   return (
