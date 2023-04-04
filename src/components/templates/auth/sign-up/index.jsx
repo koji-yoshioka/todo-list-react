@@ -1,9 +1,12 @@
 import styles from "./styles.module.css";
 import { TextBox } from "../../../atoms/TextBox";
 import { CheckBox } from "../../../atoms/CheckBox";
+import { Button } from "../../../atoms/Button";
 import { Main } from "../../../organisms/Main";
+import { useId } from "react";
 
 export const SignUp = (props) => {
+  const autoLoginId = useId();
   return (
     <Main className={styles.container}>
       <form action="" className={styles.module}>
@@ -16,9 +19,16 @@ export const SignUp = (props) => {
             <TextBox type="password" placeholder="パスワード" />
           </li>
           <li className={styles.item}>
-            <CheckBox />
+            <label htmlFor={autoLoginId} className={styles.autoLogin}>
+              <span>次回から自動ログイン</span>
+              <CheckBox id={autoLoginId} />
+            </label>
           </li>
         </ul>
+        <div className={styles.buttonArea}>
+          <Button theme="default">クリア</Button>
+          <Button theme="primary">登録する</Button>
+        </div>
       </form>
     </Main>
   );

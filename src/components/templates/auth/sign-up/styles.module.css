@@ -21,3 +21,18 @@
   flex-direction: column;
   row-gap: 30px;
 }
+
+.autoLogin {
+  align-items: center;
+  column-gap: 10px;
+  color: #808080;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.buttonArea {
+  column-gap: 20px;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
