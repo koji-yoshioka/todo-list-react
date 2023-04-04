@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import { TextBox } from "../../../atoms/TextBox";
+import { TextBox } from "@/components/atoms/TextBox";
 import { CheckBox } from "../../../atoms/CheckBox";
 import { Button } from "../../../atoms/Button";
 import { Main } from "../../../organisms/Main";
