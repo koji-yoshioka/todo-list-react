@@ -26,7 +26,6 @@ export const SignUp = (props) => {
           </li>
         </ul>
         <div className={styles.buttonArea}>
-          <Button theme="default">クリア</Button>
           <Button theme="primary">登録する</Button>
         </div>
       </form>

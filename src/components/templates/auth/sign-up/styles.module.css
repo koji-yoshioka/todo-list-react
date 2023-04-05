@@ -11,9 +11,11 @@
 }
 
 .title {
+  color: #808080;
   font-size: 1.125em;
   font-weight: 700;
-  margin-bottom: 30px;
+  margin: 0px auto 30px;
+  text-align: center;
 }
 
 .items {
